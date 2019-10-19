@@ -1,0 +1,73 @@
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0.75%;
+  width: 47.88%; /* 350/731 */
+  max-width: 350px;
+  min-height: 360px;
+}
+
+.card__item {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  background-color: $marine-light;
+}
+
+.card__item:hover,
+.card:nth-child(3) .card__item:hover {
+  background-color: $blue-light;
+}
+
+.card__checkbox:checked ~ .card__item,
+.card:nth-child(3) .card__checkbox:checked ~ .card__item {
+  background-color: $wine;
+}
+
+.card:nth-child(odd) {
+  margin-right: 3.42%;
+}
+
+.card:nth-child(3) .card__item {
+  background-color: $marine;
+}
+
+.card:nth-child(3) .card__item:hover {
+  background-color: $blue-light;
+}
+
+.card__text {
+  box-sizing: border-box;
+  padding: 0 0.1%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 0.875em;
+  text-align: left;
+}
+
+.card__button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 47.88%; /* 350/731 */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@media (max-width: $pre-tablet-one) {
+  .card {
+    box-sizing: border-box;
+    display: block;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-bottom: 5.8%;
+    width: 100%;
+    max-width: 350px;
+    min-height: 360px;
+  }
+}

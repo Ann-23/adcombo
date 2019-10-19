@@ -1,0 +1,41 @@
+.header {
+  margin-bottom: 2.9%;
+  padding-top: 5%;
+  width: 100%;
+  background-color: $main-color;
+}
+
+.header__logo {
+  box-sizing: border-box;
+  display: block;
+  width: 26.23%; /* 280/1068 */
+  max-width: 280px;
+  min-height: 112px;
+  background-color: $marine;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    margin-bottom: 8%;
+  }
+
+  .header__logo {
+    width: 23.43%;
+    max-width: 180px;
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    position: relative;
+    padding-bottom: 85%;
+  }
+
+  .header__logo {
+    float: left;
+    width: 11.42%;
+    max-width: 80px;
+    min-height: 32px;
+  }
+}

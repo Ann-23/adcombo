@@ -1,0 +1,83 @@
+.main-nav {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 5.8%;
+  padding-bottom: 10.96%;
+}
+
+.main-nav__wrapper {
+  position: relative;
+  margin-top: 3.7%;
+  width: 100%;
+}
+
+.main-nav__menu {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+}
+
+.main-nav__button {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav {
+    padding-bottom: 23%;
+  }
+
+  .main-nav__menu {
+    width: 175px;
+    height: 175px;
+  }
+
+  .main-nav__wrapper {
+    margin-top: 14%;
+  }
+}
+
+@media (max-width: $pre-tablet-three) {
+  .main-nav {
+    float: right;
+    padding: 0;
+  }
+
+  .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav__menu {
+    width: auto;
+    height: auto;
+    background-color: $grey-light;
+  }
+
+  .main-nav__button {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0.5%;
+    width: 15%;
+    min-width: 45px;
+    min-height: 30px;
+    background-color: $marine;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main-nav:hover .main-nav__wrapper {
+    position: absolute;
+    top: 31px;
+    right: 5%;
+    display: block;
+    width: 250px;
+    margin: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav {
+    width: 15%;
+  }
+}
